@@ -17,10 +17,11 @@ long long modIterative(long long a, long long b, long long c) {
 
 long long modRecursive(long long a, long long b, long long c) {
     if(b == 0) {
-        //even
+        
         return 1;
     }
     if(b%2 == 0) {
+        //even
         return modRecursive((a*a)%c, b/2, c);
     } else {
         //Odd
