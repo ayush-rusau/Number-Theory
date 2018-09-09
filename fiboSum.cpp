@@ -40,9 +40,9 @@ unsigned long long fib(long n) {
 unsigned long long solve(long long n, long long m) {
     unsigned long long ans1 = fib(n);
     unsigned long long ans2 = fib(m);
+    cout << ans2 << " " << ans1 << endl;
     return ans2-ans1;
 }
-
 
 int main() {
     long n, m;
